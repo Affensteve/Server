@@ -858,7 +858,7 @@ public class GuiS extends JFrame {
 
       // ####################################################################
       JLabel lblGast = new JLabel( "Gast" );
-      vehiclePanel.add( lblKolkhagen, "cell 0 20" );
+      vehiclePanel.add( lblGast, "cell 0 20" );
       // ####################################################################
       gast1 = new JPanel();
       gast1.add( new JLabel( new ImageIcon( gastBild ) ) );
@@ -952,7 +952,7 @@ public class GuiS extends JFrame {
 
 
       frame.setJMenuBar( menuBar );
-      frame.setSize( 800, 800 );
+      frame.setSize( 800, 820 );
       frame.setVisible( true );
       frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
    }
