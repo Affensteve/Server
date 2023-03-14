@@ -40,7 +40,7 @@ public class GuiS extends JFrame {
    JPanel lf16Melbeck7;
    JPanel lf16Melbeck8;
 
-   String lf8MelbeckBild = "res/tlf.png";
+   String lf8MelbeckBild = "res/mtw.png";
    JPanel lf8Melbeck;
    JPanel lf8Melbeck1;
    JPanel lf8Melbeck2;
@@ -95,6 +95,16 @@ public class GuiS extends JFrame {
    JPanel lfEmbsen7;
    JPanel lfEmbsen8;
 
+   String mtwEmbsenBild = "res/mtw.png";
+   JPanel mtwEmbsen;
+   JPanel mtwEmbsen1;
+   JPanel mtwEmbsen2;
+   JPanel mtwEmbsen3;
+   JPanel mtwEmbsen4;
+   JPanel mtwEmbsen5;
+   JPanel mtwEmbsen6;
+   JPanel mtwEmbsen7;
+   JPanel mtwEmbsen8;
    String tlfOerzenBild = "res/tlfOerzen.png";
    JPanel tlfOerzen;
    JPanel tlfOerzen1;
@@ -106,7 +116,7 @@ public class GuiS extends JFrame {
    JPanel tlfOerzen7;
    JPanel tlfOerzen8;
 
-   String tsfOerzenBild = "res/tsf.png";
+   String tsfOerzenBild = "res/mtw.png";
    JPanel tsfOerzen;
    JPanel tsfOerzen1;
    JPanel tsfOerzen2;
@@ -128,7 +138,7 @@ public class GuiS extends JFrame {
    JPanel tlfBarnstedt7;
    JPanel tlfBarnstedt8;
 
-   String tsfBarnstedtBild = "res/tsf.png";
+   String tsfBarnstedtBild = "res/mtw.png";
    JPanel tsfBarnstedt;
    JPanel tsfBarnstedt1;
    JPanel tsfBarnstedt2;
@@ -172,6 +182,34 @@ public class GuiS extends JFrame {
    JPanel gast26;
    JPanel gast27;
    JPanel gast28;
+   String gastDRKBild = "res/rwt.png";
+   JPanel gast3;
+   JPanel gast31;
+   JPanel gast32;
+   JPanel gast33;
+   JPanel gast34;
+   JPanel gast35;
+   JPanel gast36;
+   JPanel gast37;
+   JPanel gast38;
+   JPanel gast4;
+   JPanel gast41;
+   JPanel gast42;
+   JPanel gast43;
+   JPanel gast44;
+   JPanel gast45;
+   JPanel gast46;
+   JPanel gast47;
+   JPanel gast48;
+   JPanel gast5;
+   JPanel gast51;
+   JPanel gast52;
+   JPanel gast53;
+   JPanel gast54;
+   JPanel gast55;
+   JPanel gast56;
+   JPanel gast57;
+   JPanel gast58;
    // ################################################
 
 
@@ -181,7 +219,7 @@ public class GuiS extends JFrame {
    public GuiS( ) {
       map.put( "tlfMelbeckIndex", 0 );
       map.put( "lf16MelbeckIndex", 0 );
-      map.put( "lf8MelbeckIndex", 0 );
+      map.put( "mtwMelbeckIndex", 0 );
       map.put( "mtwMelbeckIndex", 0 );
 
       map.put( "lf8DeutschEvernIndex", 0 );
@@ -193,16 +231,19 @@ public class GuiS extends JFrame {
       map.put( "mtwEmbsenIndex", 0 );
 
       map.put( "tlfOerzenIndex", 0 );
-      map.put( "tsfOerzenIndex", 0 );
+//      map.put( "tsfOerzenIndex", 0 );
       map.put( "mtwOerzenIndex", 0 );
 
       map.put( "tlfBarnstedtIndex", 0 );
-      map.put( "tsfBarnstedtIndex", 0 );
+//      map.put( "tsfBarnstedtIndex", 0 );
       map.put( "mtwBarnstedtIndex", 0 );
 
       map.put( "lf8KolkhagenIndex", 0 );
       map.put( "gast1Index", 0 );
       map.put( "gast2Index", 0 );
+      map.put( "gast3Index", 0 );
+      map.put( "gast4Index", 0 );
+      map.put( "gast5Index", 0 );
 
       try {
          UIManager
@@ -626,333 +667,510 @@ public class GuiS extends JFrame {
       lfEmbsen8.setVisible( false );
       vehiclePanel.add( lfEmbsen8, "cell 8 11" );
 
+      mtwEmbsen = new JPanel();
+      mtwEmbsen.add( new JLabel( new ImageIcon( mtwEmbsenBild ) ) );
+      vehiclePanel.add( mtwEmbsen, "cell 0 12" );
+
+      mtwEmbsen1 = new JPanel();
+      mtwEmbsen1.add( new JLabel( new ImageIcon( mtwEmbsenBild ) ) );
+      mtwEmbsen1.setVisible( false );
+      vehiclePanel.add( mtwEmbsen1, "cell 1 12" );
+
+      mtwEmbsen2 = new JPanel();
+      mtwEmbsen2.add( new JLabel( new ImageIcon( mtwEmbsenBild ) ) );
+      mtwEmbsen2.setVisible( false );
+      vehiclePanel.add( mtwEmbsen2, "cell 2 12" );
+
+      mtwEmbsen3 = new JPanel();
+      mtwEmbsen3.add( new JLabel( new ImageIcon( mtwEmbsenBild ) ) );
+      mtwEmbsen3.setVisible( false );
+      vehiclePanel.add( mtwEmbsen3, "cell 3 12" );
+
+      mtwEmbsen4 = new JPanel();
+      mtwEmbsen4.add( new JLabel( new ImageIcon( mtwEmbsenBild ) ) );
+      mtwEmbsen4.setVisible( false );
+      vehiclePanel.add( mtwEmbsen4, "cell 4 12" );
+
+      mtwEmbsen5 = new JPanel();
+      mtwEmbsen5.add( new JLabel( new ImageIcon( mtwEmbsenBild ) ) );
+      mtwEmbsen5.setVisible( false );
+      vehiclePanel.add( mtwEmbsen5, "cell 5 12" );
+
+      mtwEmbsen6 = new JPanel();
+      mtwEmbsen6.add( new JLabel( new ImageIcon( mtwEmbsenBild ) ) );
+      mtwEmbsen6.setVisible( false );
+      vehiclePanel.add( mtwEmbsen6, "cell 6 12,alignx left" );
+
+      mtwEmbsen7 = new JPanel();
+      mtwEmbsen7.add( new JLabel( new ImageIcon( mtwEmbsenBild ) ) );
+      mtwEmbsen7.setVisible( false );
+      vehiclePanel.add( mtwEmbsen7, "cell 6 12,alignx right" );
+
+      mtwEmbsen8 = new JPanel();
+      mtwEmbsen8.add( new JLabel( new ImageIcon( mtwEmbsenBild ) ) );
+      mtwEmbsen8.setVisible( false );
+      vehiclePanel.add( mtwEmbsen8, "cell 8 12" );
+
+      // ###############################
       JLabel lblOerzen = new JLabel( "Oerzen" );
-      vehiclePanel.add( lblOerzen, "cell 0 12" );
+      vehiclePanel.add( lblOerzen, "cell 0 13" );
 
       tlfOerzen = new JPanel();
       tlfOerzen.add( new JLabel( new ImageIcon( tlfOerzenBild ) ) );
-      vehiclePanel.add( tlfOerzen, "cell 0 13" );
+      vehiclePanel.add( tlfOerzen, "cell 0 14" );
 
       tlfOerzen1 = new JPanel();
       tlfOerzen1.add( new JLabel( new ImageIcon( tlfOerzenBild ) ) );
       tlfOerzen1.setVisible( false );
-      vehiclePanel.add( tlfOerzen1, "cell 1 13" );
+      vehiclePanel.add( tlfOerzen1, "cell 1 14" );
 
       tlfOerzen2 = new JPanel();
       tlfOerzen2.add( new JLabel( new ImageIcon( tlfOerzenBild ) ) );
       tlfOerzen2.setVisible( false );
-      vehiclePanel.add( tlfOerzen2, "cell 2 13" );
+      vehiclePanel.add( tlfOerzen2, "cell 2 14" );
 
       tlfOerzen3 = new JPanel();
       tlfOerzen3.add( new JLabel( new ImageIcon( tlfOerzenBild ) ) );
       tlfOerzen3.setVisible( false );
-      vehiclePanel.add( tlfOerzen3, "cell 3 13" );
+      vehiclePanel.add( tlfOerzen3, "cell 3 14" );
 
       tlfOerzen4 = new JPanel();
       tlfOerzen4.add( new JLabel( new ImageIcon( tlfOerzenBild ) ) );
       tlfOerzen4.setVisible( false );
-      vehiclePanel.add( tlfOerzen4, "cell 4 13" );
+      vehiclePanel.add( tlfOerzen4, "cell 4 14" );
 
       tlfOerzen5 = new JPanel();
       tlfOerzen5.add( new JLabel( new ImageIcon( tlfOerzenBild ) ) );
       tlfOerzen5.setVisible( false );
-      vehiclePanel.add( tlfOerzen5, "cell 5 13" );
+      vehiclePanel.add( tlfOerzen5, "cell 5 14" );
 
       tlfOerzen6 = new JPanel();
       tlfOerzen6.add( new JLabel( new ImageIcon( tlfOerzenBild ) ) );
       tlfOerzen6.setVisible( false );
-      vehiclePanel.add( tlfOerzen6, "cell 6 13,alignx left" );
+      vehiclePanel.add( tlfOerzen6, "cell 6 14,alignx left" );
 
       tlfOerzen7 = new JPanel();
       tlfOerzen7.add( new JLabel( new ImageIcon( tlfOerzenBild ) ) );
       tlfOerzen7.setVisible( false );
-      vehiclePanel.add( tlfOerzen7, "cell 6 13,alignx right" );
+      vehiclePanel.add( tlfOerzen7, "cell 6 14,alignx right" );
 
       tlfOerzen8 = new JPanel();
       tlfOerzen8.add( new JLabel( new ImageIcon( tlfOerzenBild ) ) );
       tlfOerzen8.setVisible( false );
-      vehiclePanel.add( tlfOerzen8, "cell 8 13" );
+      vehiclePanel.add( tlfOerzen8, "cell 8 14" );
 
       tsfOerzen = new JPanel();
       tsfOerzen.add( new JLabel( new ImageIcon( tsfOerzenBild ) ) );
-      vehiclePanel.add( tsfOerzen, "cell 0 14" );
+      vehiclePanel.add( tsfOerzen, "cell 0 15" );
 
       tsfOerzen1 = new JPanel();
       tsfOerzen1.add( new JLabel( new ImageIcon( tsfOerzenBild ) ) );
       tsfOerzen1.setVisible( false );
-      vehiclePanel.add( tsfOerzen1, "cell 1 14" );
+      vehiclePanel.add( tsfOerzen1, "cell 1 15" );
 
       tsfOerzen2 = new JPanel();
       tsfOerzen2.add( new JLabel( new ImageIcon( tsfOerzenBild ) ) );
       tsfOerzen2.setVisible( false );
-      vehiclePanel.add( tsfOerzen2, "cell 2 14" );
+      vehiclePanel.add( tsfOerzen2, "cell 2 15" );
 
       tsfOerzen3 = new JPanel();
       tsfOerzen3.add( new JLabel( new ImageIcon( tsfOerzenBild ) ) );
       tsfOerzen3.setVisible( false );
-      vehiclePanel.add( tsfOerzen3, "cell 3 14" );
+      vehiclePanel.add( tsfOerzen3, "cell 3 15" );
 
       tsfOerzen4 = new JPanel();
       tsfOerzen4.add( new JLabel( new ImageIcon( tsfOerzenBild ) ) );
       tsfOerzen4.setVisible( false );
-      vehiclePanel.add( tsfOerzen4, "cell 4 14" );
+      vehiclePanel.add( tsfOerzen4, "cell 4 15" );
 
       tsfOerzen5 = new JPanel();
       tsfOerzen5.add( new JLabel( new ImageIcon( tsfOerzenBild ) ) );
       tsfOerzen5.setVisible( false );
-      vehiclePanel.add( tsfOerzen5, "cell 5 14" );
+      vehiclePanel.add( tsfOerzen5, "cell 5 15" );
 
       tsfOerzen6 = new JPanel();
       tsfOerzen6.add( new JLabel( new ImageIcon( tsfOerzenBild ) ) );
       tsfOerzen6.setVisible( false );
-      vehiclePanel.add( tsfOerzen6, "cell 6 14,alignx left" );
+      vehiclePanel.add( tsfOerzen6, "cell 6 15,alignx left" );
 
       tsfOerzen7 = new JPanel();
       tsfOerzen7.add( new JLabel( new ImageIcon( tsfOerzenBild ) ) );
       tsfOerzen7.setVisible( false );
-      vehiclePanel.add( tsfOerzen7, "cell 6 14,alignx right" );
+      vehiclePanel.add( tsfOerzen7, "cell 6 15,alignx right" );
 
       tsfOerzen8 = new JPanel();
       tsfOerzen8.add( new JLabel( new ImageIcon( tsfOerzenBild ) ) );
       tsfOerzen8.setVisible( false );
-      vehiclePanel.add( tsfOerzen8, "cell 8 14" );
+      vehiclePanel.add( tsfOerzen8, "cell 8 15" );
 
       JLabel lblBarnstedt = new JLabel( "Barnstedt" );
-      vehiclePanel.add( lblBarnstedt, "cell 0 15" );
+      vehiclePanel.add( lblBarnstedt, "cell 0 16" );
 
       tlfBarnstedt = new JPanel();
       tlfBarnstedt.add( new JLabel( new ImageIcon( tlfBarnstedtBild ) ) );
-      vehiclePanel.add( tlfBarnstedt, "cell 0 16" );
+      vehiclePanel.add( tlfBarnstedt, "cell 0 17" );
 
       tlfBarnstedt1 = new JPanel();
       tlfBarnstedt1.add( new JLabel( new ImageIcon( tlfBarnstedtBild ) ) );
       tlfBarnstedt1.setVisible( false );
-      vehiclePanel.add( tlfBarnstedt1, "cell 1 16" );
+      vehiclePanel.add( tlfBarnstedt1, "cell 1 17" );
 
       tlfBarnstedt2 = new JPanel();
       tlfBarnstedt2.add( new JLabel( new ImageIcon( tlfBarnstedtBild ) ) );
       tlfBarnstedt2.setVisible( false );
-      vehiclePanel.add( tlfBarnstedt2, "cell 2 16" );
+      vehiclePanel.add( tlfBarnstedt2, "cell 2 17" );
 
       tlfBarnstedt3 = new JPanel();
       tlfBarnstedt3.add( new JLabel( new ImageIcon( tlfBarnstedtBild ) ) );
       tlfBarnstedt3.setVisible( false );
-      vehiclePanel.add( tlfBarnstedt3, "cell 3 16" );
+      vehiclePanel.add( tlfBarnstedt3, "cell 3 17" );
 
       tlfBarnstedt4 = new JPanel();
       tlfBarnstedt4.add( new JLabel( new ImageIcon( tlfBarnstedtBild ) ) );
       tlfBarnstedt4.setVisible( false );
-      vehiclePanel.add( tlfBarnstedt4, "cell 4 16" );
+      vehiclePanel.add( tlfBarnstedt4, "cell 4 17" );
 
       tlfBarnstedt5 = new JPanel();
       tlfBarnstedt5.add( new JLabel( new ImageIcon( tlfBarnstedtBild ) ) );
       tlfBarnstedt5.setVisible( false );
-      vehiclePanel.add( tlfBarnstedt5, "cell 5 16" );
+      vehiclePanel.add( tlfBarnstedt5, "cell 5 17" );
 
       tlfBarnstedt6 = new JPanel();
       tlfBarnstedt6.add( new JLabel( new ImageIcon( tlfBarnstedtBild ) ) );
       tlfBarnstedt6.setVisible( false );
-      vehiclePanel.add( tlfBarnstedt6, "cell 6 16,alignx left" );
+      vehiclePanel.add( tlfBarnstedt6, "cell 6 17,alignx left" );
 
       tlfBarnstedt7 = new JPanel();
       tlfBarnstedt7.add( new JLabel( new ImageIcon( tlfBarnstedtBild ) ) );
       tlfBarnstedt7.setVisible( false );
-      vehiclePanel.add( tlfBarnstedt7, "cell 6 16,alignx right" );
+      vehiclePanel.add( tlfBarnstedt7, "cell 6 17,alignx right" );
 
       tlfBarnstedt8 = new JPanel();
       tlfBarnstedt8.add( new JLabel( new ImageIcon( tlfBarnstedtBild ) ) );
       tlfBarnstedt8.setVisible( false );
-      vehiclePanel.add( tlfBarnstedt8, "cell 8 16" );
+      vehiclePanel.add( tlfBarnstedt8, "cell 8 17" );
 
       tsfBarnstedt = new JPanel();
       tsfBarnstedt.add( new JLabel( new ImageIcon( tsfBarnstedtBild ) ) );
-      vehiclePanel.add( tsfBarnstedt, "cell 0 17" );
+      vehiclePanel.add( tsfBarnstedt, "cell 0 18" );
 
       tsfBarnstedt1 = new JPanel();
       tsfBarnstedt1.add( new JLabel( new ImageIcon( tsfBarnstedtBild ) ) );
       tsfBarnstedt1.setVisible( false );
-      vehiclePanel.add( tsfBarnstedt1, "cell 1 17" );
+      vehiclePanel.add( tsfBarnstedt1, "cell 1 18" );
 
       tsfBarnstedt2 = new JPanel();
       tsfBarnstedt2.add( new JLabel( new ImageIcon( tsfBarnstedtBild ) ) );
       tsfBarnstedt2.setVisible( false );
-      vehiclePanel.add( tsfBarnstedt2, "cell 2 17" );
+      vehiclePanel.add( tsfBarnstedt2, "cell 2 18" );
 
       tsfBarnstedt3 = new JPanel();
       tsfBarnstedt3.add( new JLabel( new ImageIcon( tsfBarnstedtBild ) ) );
       tsfBarnstedt3.setVisible( false );
-      vehiclePanel.add( tsfBarnstedt3, "cell 3 17" );
+      vehiclePanel.add( tsfBarnstedt3, "cell 3 18" );
 
       tsfBarnstedt4 = new JPanel();
       tsfBarnstedt4.add( new JLabel( new ImageIcon( tsfBarnstedtBild ) ) );
       tsfBarnstedt4.setVisible( false );
-      vehiclePanel.add( tsfBarnstedt4, "cell 4 17" );
+      vehiclePanel.add( tsfBarnstedt4, "cell 4 18" );
 
       tsfBarnstedt5 = new JPanel();
       tsfBarnstedt5.add( new JLabel( new ImageIcon( tsfBarnstedtBild ) ) );
       tsfBarnstedt5.setVisible( false );
-      vehiclePanel.add( tsfBarnstedt5, "cell 5 17" );
+      vehiclePanel.add( tsfBarnstedt5, "cell 5 18" );
 
       tsfBarnstedt6 = new JPanel();
       tsfBarnstedt6.add( new JLabel( new ImageIcon( tsfBarnstedtBild ) ) );
       tsfBarnstedt6.setVisible( false );
-      vehiclePanel.add( tsfBarnstedt6, "cell 6 17,alignx left" );
+      vehiclePanel.add( tsfBarnstedt6, "cell 6 18,alignx left" );
 
       tsfBarnstedt7 = new JPanel();
       tsfBarnstedt7.add( new JLabel( new ImageIcon( tsfBarnstedtBild ) ) );
       tsfBarnstedt7.setVisible( false );
-      vehiclePanel.add( tsfBarnstedt7, "cell 6 17,alignx right" );
+      vehiclePanel.add( tsfBarnstedt7, "cell 6 18,alignx right" );
 
       tsfBarnstedt8 = new JPanel();
       tsfBarnstedt8.add( new JLabel( new ImageIcon( tsfBarnstedtBild ) ) );
       tsfBarnstedt8.setVisible( false );
-      vehiclePanel.add( tsfBarnstedt8, "cell 8 17" );
+      vehiclePanel.add( tsfBarnstedt8, "cell 8 18" );
 
       JLabel lblKolkhagen = new JLabel( "Kolkhagen" );
-      vehiclePanel.add( lblKolkhagen, "cell 0 18" );
+      vehiclePanel.add( lblKolkhagen, "cell 0 19" );
 
       lf8Kolkhagen = new JPanel();
       lf8Kolkhagen.add( new JLabel( new ImageIcon( lf8KolkhagenBild ) ) );
-      vehiclePanel.add( lf8Kolkhagen, "cell 0 19" );
+      vehiclePanel.add( lf8Kolkhagen, "cell 0 20" );
 
       lf8Kolkhagen1 = new JPanel();
       lf8Kolkhagen1.add( new JLabel( new ImageIcon( lf8KolkhagenBild ) ) );
       lf8Kolkhagen1.setVisible( false );
-      vehiclePanel.add( lf8Kolkhagen1, "cell 1 19" );
+      vehiclePanel.add( lf8Kolkhagen1, "cell 1 20" );
 
       lf8Kolkhagen2 = new JPanel();
       lf8Kolkhagen2.add( new JLabel( new ImageIcon( lf8KolkhagenBild ) ) );
       lf8Kolkhagen2.setVisible( false );
-      vehiclePanel.add( lf8Kolkhagen2, "cell 2 19" );
+      vehiclePanel.add( lf8Kolkhagen2, "cell 2 20" );
 
       lf8Kolkhagen3 = new JPanel();
       lf8Kolkhagen3.add( new JLabel( new ImageIcon( lf8KolkhagenBild ) ) );
       lf8Kolkhagen3.setVisible( false );
-      vehiclePanel.add( lf8Kolkhagen3, "cell 3 19" );
+      vehiclePanel.add( lf8Kolkhagen3, "cell 3 20" );
 
       lf8Kolkhagen4 = new JPanel();
       lf8Kolkhagen4.add( new JLabel( new ImageIcon( lf8KolkhagenBild ) ) );
       lf8Kolkhagen4.setVisible( false );
-      vehiclePanel.add( lf8Kolkhagen4, "cell 4 19" );
+      vehiclePanel.add( lf8Kolkhagen4, "cell 4 20" );
 
       lf8Kolkhagen5 = new JPanel();
       lf8Kolkhagen5.add( new JLabel( new ImageIcon( lf8KolkhagenBild ) ) );
       lf8Kolkhagen5.setVisible( false );
-      vehiclePanel.add( lf8Kolkhagen5, "cell 5 19" );
+      vehiclePanel.add( lf8Kolkhagen5, "cell 5 20" );
 
       lf8Kolkhagen6 = new JPanel();
       lf8Kolkhagen6.add( new JLabel( new ImageIcon( lf8KolkhagenBild ) ) );
       lf8Kolkhagen6.setVisible( false );
-      vehiclePanel.add( lf8Kolkhagen6, "cell 6 19,alignx left" );
+      vehiclePanel.add( lf8Kolkhagen6, "cell 6 20,alignx left" );
 
       lf8Kolkhagen7 = new JPanel();
       lf8Kolkhagen7.add( new JLabel( new ImageIcon( lf8KolkhagenBild ) ) );
       lf8Kolkhagen7.setVisible( false );
-      vehiclePanel.add( lf8Kolkhagen7, "cell 6 19,alignx right" );
+      vehiclePanel.add( lf8Kolkhagen7, "cell 6 20,alignx right" );
 
       lf8Kolkhagen8 = new JPanel();
       lf8Kolkhagen8.add( new JLabel( new ImageIcon( lf8KolkhagenBild ) ) );
       lf8Kolkhagen8.setVisible( false );
-      vehiclePanel.add( lf8Kolkhagen8, "cell 8 19" );
+      vehiclePanel.add( lf8Kolkhagen8, "cell 8 20" );
 
 
       // ####################################################################
       JLabel lblGast = new JLabel( "Gast" );
-      vehiclePanel.add( lblGast, "cell 0 20" );
+      vehiclePanel.add( lblGast, "cell 0 21" );
       // ####################################################################
       gast1 = new JPanel();
       gast1.add( new JLabel( new ImageIcon( gastBild ) ) );
-      vehiclePanel.add( gast1, "cell 0 21" );
+      vehiclePanel.add( gast1, "cell 0 22" );
 
       gast11 = new JPanel();
       gast11.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast11.setVisible( false );
-      vehiclePanel.add( gast11, "cell 1 21" );
+      vehiclePanel.add( gast11, "cell 1 22" );
 
       gast12 = new JPanel();
       gast12.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast12.setVisible( false );
-      vehiclePanel.add( gast12, "cell 2 21" );
+      vehiclePanel.add( gast12, "cell 2 22" );
 
       gast13 = new JPanel();
       gast13.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast13.setVisible( false );
-      vehiclePanel.add( gast13, "cell 3 21" );
+      vehiclePanel.add( gast13, "cell 3 22" );
 
       gast14 = new JPanel();
       gast14.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast14.setVisible( false );
-      vehiclePanel.add( gast14, "cell 4 21" );
+      vehiclePanel.add( gast14, "cell 4 22" );
 
       gast15 = new JPanel();
       gast15.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast15.setVisible( false );
-      vehiclePanel.add( gast15, "cell 5 21" );
+      vehiclePanel.add( gast15, "cell 5 22" );
 
       gast16 = new JPanel();
       gast16.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast16.setVisible( false );
-      vehiclePanel.add( gast16, "cell 6 21,alignx left" );
+      vehiclePanel.add( gast16, "cell 6 22,alignx left" );
 
       gast17 = new JPanel();
       gast17.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast17.setVisible( false );
-      vehiclePanel.add( gast17, "cell 6 21,alignx right" );
+      vehiclePanel.add( gast17, "cell 6 22,alignx right" );
 
       gast18 = new JPanel();
       gast18.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast18.setVisible( false );
-      vehiclePanel.add( gast18, "cell 8 21" );
+      vehiclePanel.add( gast18, "cell 8 22" );
 
       // ####################################################################
       gast2 = new JPanel();
       gast2.add( new JLabel( new ImageIcon( gastBild ) ) );
-      vehiclePanel.add( gast2, "cell 0 22" );
+      vehiclePanel.add( gast2, "cell 0 23" );
 
       gast21 = new JPanel();
       gast21.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast21.setVisible( false );
-      vehiclePanel.add( gast21, "cell 1 22" );
+      vehiclePanel.add( gast21, "cell 1 23" );
 
       gast22 = new JPanel();
       gast22.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast22.setVisible( false );
-      vehiclePanel.add( gast22, "cell 2 22" );
+      vehiclePanel.add( gast22, "cell 2 23" );
 
       gast23 = new JPanel();
       gast23.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast23.setVisible( false );
-      vehiclePanel.add( gast23, "cell 3 22" );
+      vehiclePanel.add( gast23, "cell 3 23" );
 
       gast24 = new JPanel();
       gast24.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast24.setVisible( false );
-      vehiclePanel.add( gast24, "cell 4 22" );
+      vehiclePanel.add( gast24, "cell 4 23" );
 
       gast25 = new JPanel();
       gast25.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast25.setVisible( false );
-      vehiclePanel.add( gast25, "cell 5 22" );
+      vehiclePanel.add( gast25, "cell 5 23" );
 
       gast26 = new JPanel();
       gast26.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast26.setVisible( false );
-      vehiclePanel.add( gast26, "cell 6 22,alignx left" );
+      vehiclePanel.add( gast26, "cell 6 23,alignx left" );
 
       gast27 = new JPanel();
       gast27.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast27.setVisible( false );
-      vehiclePanel.add( gast27, "cell 6 22,alignx right" );
+      vehiclePanel.add( gast27, "cell 6 23,alignx right" );
 
       gast28 = new JPanel();
       gast28.add( new JLabel( new ImageIcon( gastBild ) ) );
       gast28.setVisible( false );
-      vehiclePanel.add( gast28, "cell 8 22" );
+      vehiclePanel.add( gast28, "cell 8 23" );
+
+      gast3 = new JPanel();
+      gast3.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      vehiclePanel.add( gast3, "cell 0 24" );
+
+      gast31 = new JPanel();
+      gast31.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast31.setVisible( false );
+      vehiclePanel.add( gast31, "cell 1 24" );
+
+      gast32 = new JPanel();
+      gast32.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast32.setVisible( false );
+      vehiclePanel.add( gast32, "cell 2 24" );
+
+      gast33 = new JPanel();
+      gast33.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast33.setVisible( false );
+      vehiclePanel.add( gast33, "cell 3 24" );
+
+      gast34 = new JPanel();
+      gast34.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast34.setVisible( false );
+      vehiclePanel.add( gast34, "cell 4 24" );
+
+      gast35 = new JPanel();
+      gast35.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast35.setVisible( false );
+      vehiclePanel.add( gast35, "cell 5 24" );
+
+      gast36 = new JPanel();
+      gast36.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast36.setVisible( false );
+      vehiclePanel.add( gast36, "cell 6 24,alignx left" );
+
+      gast37 = new JPanel();
+      gast37.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast37.setVisible( false );
+      vehiclePanel.add( gast37, "cell 6 24,alignx right" );
+
+      gast38 = new JPanel();
+      gast38.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast38.setVisible( false );
+      vehiclePanel.add( gast38, "cell 8 24" );
+
+      gast4 = new JPanel();
+      gast4.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      vehiclePanel.add( gast4, "cell 0 25" );
+
+      gast41 = new JPanel();
+      gast41.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast41.setVisible( false );
+      vehiclePanel.add( gast41, "cell 1 25" );
+
+      gast42 = new JPanel();
+      gast42.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast42.setVisible( false );
+      vehiclePanel.add( gast42, "cell 2 25" );
+
+      gast43 = new JPanel();
+      gast43.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast43.setVisible( false );
+      vehiclePanel.add( gast43, "cell 3 25" );
+
+      gast44 = new JPanel();
+      gast44.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast44.setVisible( false );
+      vehiclePanel.add( gast44, "cell 4 25" );
+
+      gast45 = new JPanel();
+      gast45.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast45.setVisible( false );
+      vehiclePanel.add( gast45, "cell 5 25" );
+
+      gast46 = new JPanel();
+      gast46.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast46.setVisible( false );
+      vehiclePanel.add( gast46, "cell 6 25,alignx left" );
+
+      gast47 = new JPanel();
+      gast47.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast47.setVisible( false );
+      vehiclePanel.add( gast47, "cell 6 25,alignx right" );
+
+      gast48 = new JPanel();
+      gast48.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast48.setVisible( false );
+      vehiclePanel.add( gast48, "cell 8 25" );
+
+      gast5 = new JPanel();
+      gast5.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      vehiclePanel.add( gast5, "cell 0 26" );
+
+      gast51 = new JPanel();
+      gast51.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast51.setVisible( false );
+      vehiclePanel.add( gast51, "cell 1 26" );
+
+      gast52 = new JPanel();
+      gast52.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast52.setVisible( false );
+      vehiclePanel.add( gast52, "cell 2 26" );
+
+      gast53 = new JPanel();
+      gast53.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast53.setVisible( false );
+      vehiclePanel.add( gast53, "cell 3 26" );
+
+      gast54 = new JPanel();
+      gast54.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast54.setVisible( false );
+      vehiclePanel.add( gast54, "cell 4 26" );
+
+      gast55 = new JPanel();
+      gast55.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast55.setVisible( false );
+      vehiclePanel.add( gast55, "cell 5 26" );
+
+      gast56 = new JPanel();
+      gast56.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast56.setVisible( false );
+      vehiclePanel.add( gast56, "cell 6 26,alignx left" );
+
+      gast57 = new JPanel();
+      gast57.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast57.setVisible( false );
+      vehiclePanel.add( gast57, "cell 6 26,alignx right" );
+
+      gast58 = new JPanel();
+      gast58.add( new JLabel( new ImageIcon( gastDRKBild ) ) );
+      gast58.setVisible( false );
+      vehiclePanel.add( gast58, "cell 8 26" );
       // ####################################################################
 
 
       frame.setJMenuBar( menuBar );
-      frame.setSize( 800, 820 );
+      frame.setSize( 800, 950 );
       frame.setVisible( true );
       frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
    }
@@ -1146,8 +1364,8 @@ public class GuiS extends JFrame {
                lf16Melbeck8.setVisible( true );
             }
             break;
-         case "lf8MelbeckIndex":
-            if( map.get( "lf8MelbeckIndex" ) == 0 ) {
+         case "mtwMelbeckIndex":
+            if( map.get( "mtwMelbeckIndex" ) == 0 ) {
                lf8Melbeck.setVisible( true );
                lf8Melbeck1.setVisible( false );
                lf8Melbeck2.setVisible( false );
@@ -1157,7 +1375,7 @@ public class GuiS extends JFrame {
                lf8Melbeck6.setVisible( false );
                lf8Melbeck7.setVisible( false );
                lf8Melbeck8.setVisible( false );
-            } else if( map.get( "lf8MelbeckIndex" ) == 1 ) {
+            } else if( map.get( "mtwMelbeckIndex" ) == 1 ) {
                lf8Melbeck.setVisible( false );
                lf8Melbeck1.setVisible( true );
                lf8Melbeck2.setVisible( false );
@@ -1167,7 +1385,7 @@ public class GuiS extends JFrame {
                lf8Melbeck6.setVisible( false );
                lf8Melbeck7.setVisible( false );
                lf8Melbeck8.setVisible( false );
-            } else if( map.get( "lf8MelbeckIndex" ) == 2 ) {
+            } else if( map.get( "mtwMelbeckIndex" ) == 2 ) {
                lf8Melbeck.setVisible( false );
                lf8Melbeck1.setVisible( false );
                lf8Melbeck2.setVisible( true );
@@ -1177,7 +1395,7 @@ public class GuiS extends JFrame {
                lf8Melbeck6.setVisible( false );
                lf8Melbeck7.setVisible( false );
                lf8Melbeck8.setVisible( false );
-            } else if( map.get( "lf8MelbeckIndex" ) == 3 ) {
+            } else if( map.get( "mtwMelbeckIndex" ) == 3 ) {
                lf8Melbeck.setVisible( false );
                lf8Melbeck1.setVisible( false );
                lf8Melbeck2.setVisible( false );
@@ -1187,7 +1405,7 @@ public class GuiS extends JFrame {
                lf8Melbeck6.setVisible( false );
                lf8Melbeck7.setVisible( false );
                lf8Melbeck8.setVisible( false );
-            } else if( map.get( "lf8MelbeckIndex" ) == 4 ) {
+            } else if( map.get( "mtwMelbeckIndex" ) == 4 ) {
                lf8Melbeck.setVisible( false );
                lf8Melbeck1.setVisible( false );
                lf8Melbeck2.setVisible( false );
@@ -1197,7 +1415,7 @@ public class GuiS extends JFrame {
                lf8Melbeck6.setVisible( false );
                lf8Melbeck7.setVisible( false );
                lf8Melbeck8.setVisible( false );
-            } else if( map.get( "lf8MelbeckIndex" ) == 5 ) {
+            } else if( map.get( "mtwMelbeckIndex" ) == 5 ) {
                lf8Melbeck.setVisible( false );
                lf8Melbeck1.setVisible( false );
                lf8Melbeck2.setVisible( false );
@@ -1207,7 +1425,7 @@ public class GuiS extends JFrame {
                lf8Melbeck6.setVisible( false );
                lf8Melbeck7.setVisible( false );
                lf8Melbeck8.setVisible( false );
-            } else if( map.get( "lf8MelbeckIndex" ) == 6 ) {
+            } else if( map.get( "mtwMelbeckIndex" ) == 6 ) {
                lf8Melbeck.setVisible( false );
                lf8Melbeck1.setVisible( false );
                lf8Melbeck2.setVisible( false );
@@ -1217,7 +1435,7 @@ public class GuiS extends JFrame {
                lf8Melbeck6.setVisible( true );
                lf8Melbeck7.setVisible( false );
                lf8Melbeck8.setVisible( false );
-            } else if( map.get( "lf8MelbeckIndex" ) == 7 ) {
+            } else if( map.get( "mtwMelbeckIndex" ) == 7 ) {
                lf8Melbeck.setVisible( false );
                lf8Melbeck1.setVisible( false );
                lf8Melbeck2.setVisible( false );
@@ -1227,7 +1445,7 @@ public class GuiS extends JFrame {
                lf8Melbeck6.setVisible( false );
                lf8Melbeck7.setVisible( true );
                lf8Melbeck8.setVisible( false );
-            } else if( map.get( "lf8MelbeckIndex" ) == 8 ) {
+            } else if( map.get( "mtwMelbeckIndex" ) == 8 ) {
                lf8Melbeck.setVisible( false );
                lf8Melbeck1.setVisible( false );
                lf8Melbeck2.setVisible( false );
@@ -1611,6 +1829,99 @@ public class GuiS extends JFrame {
                lfEmbsen8.setVisible( true );
             }
             break;
+         case "mtwEmbsenIndex":
+            if( map.get( "mtwEmbsenIndex" ) == 0 ) {
+               mtwEmbsen.setVisible( true );
+               mtwEmbsen1.setVisible( false );
+               mtwEmbsen2.setVisible( false );
+               mtwEmbsen3.setVisible( false );
+               mtwEmbsen4.setVisible( false );
+               mtwEmbsen5.setVisible( false );
+               mtwEmbsen6.setVisible( false );
+               mtwEmbsen7.setVisible( false );
+               mtwEmbsen8.setVisible( false );
+            } else if( map.get( "mtwEmbsenIndex" ) == 1 ) {
+               mtwEmbsen.setVisible( false );
+               mtwEmbsen1.setVisible( true );
+               mtwEmbsen2.setVisible( false );
+               mtwEmbsen3.setVisible( false );
+               mtwEmbsen4.setVisible( false );
+               mtwEmbsen5.setVisible( false );
+               mtwEmbsen6.setVisible( false );
+               mtwEmbsen7.setVisible( false );
+               mtwEmbsen8.setVisible( false );
+            } else if( map.get( "mtwEmbsenIndex" ) == 2 ) {
+               mtwEmbsen.setVisible( false );
+               mtwEmbsen1.setVisible( false );
+               mtwEmbsen2.setVisible( true );
+               mtwEmbsen3.setVisible( false );
+               mtwEmbsen4.setVisible( false );
+               mtwEmbsen5.setVisible( false );
+               mtwEmbsen6.setVisible( false );
+               mtwEmbsen7.setVisible( false );
+               mtwEmbsen8.setVisible( false );
+            } else if( map.get( "mtwEmbsenIndex" ) == 3 ) {
+               mtwEmbsen.setVisible( false );
+               mtwEmbsen1.setVisible( false );
+               mtwEmbsen2.setVisible( false );
+               mtwEmbsen3.setVisible( true );
+               mtwEmbsen4.setVisible( false );
+               mtwEmbsen5.setVisible( false );
+               mtwEmbsen6.setVisible( false );
+               mtwEmbsen7.setVisible( false );
+               mtwEmbsen8.setVisible( false );
+            } else if( map.get( "mtwEmbsenIndex" ) == 4 ) {
+               mtwEmbsen.setVisible( false );
+               mtwEmbsen1.setVisible( false );
+               mtwEmbsen2.setVisible( false );
+               mtwEmbsen3.setVisible( false );
+               mtwEmbsen4.setVisible( true );
+               mtwEmbsen5.setVisible( false );
+               mtwEmbsen6.setVisible( false );
+               mtwEmbsen7.setVisible( false );
+               mtwEmbsen8.setVisible( false );
+            } else if( map.get( "mtwEmbsenIndex" ) == 5 ) {
+               mtwEmbsen.setVisible( false );
+               mtwEmbsen1.setVisible( false );
+               mtwEmbsen2.setVisible( false );
+               mtwEmbsen3.setVisible( false );
+               mtwEmbsen4.setVisible( false );
+               mtwEmbsen5.setVisible( true );
+               mtwEmbsen6.setVisible( false );
+               mtwEmbsen7.setVisible( false );
+               mtwEmbsen8.setVisible( false );
+            } else if( map.get( "mtwEmbsenIndex" ) == 6 ) {
+               mtwEmbsen.setVisible( false );
+               mtwEmbsen1.setVisible( false );
+               mtwEmbsen2.setVisible( false );
+               mtwEmbsen3.setVisible( false );
+               mtwEmbsen4.setVisible( false );
+               mtwEmbsen5.setVisible( false );
+               mtwEmbsen6.setVisible( true );
+               mtwEmbsen7.setVisible( false );
+               mtwEmbsen8.setVisible( false );
+            } else if( map.get( "mtwEmbsenIndex" ) == 7 ) {
+               mtwEmbsen.setVisible( false );
+               mtwEmbsen1.setVisible( false );
+               mtwEmbsen2.setVisible( false );
+               mtwEmbsen3.setVisible( false );
+               mtwEmbsen4.setVisible( false );
+               mtwEmbsen5.setVisible( false );
+               mtwEmbsen6.setVisible( false );
+               mtwEmbsen7.setVisible( true );
+               mtwEmbsen8.setVisible( false );
+            } else if( map.get( "mtwEmbsenIndex" ) == 8 ) {
+               mtwEmbsen.setVisible( false );
+               mtwEmbsen1.setVisible( false );
+               mtwEmbsen2.setVisible( false );
+               mtwEmbsen3.setVisible( false );
+               mtwEmbsen4.setVisible( false );
+               mtwEmbsen5.setVisible( false );
+               mtwEmbsen6.setVisible( false );
+               mtwEmbsen7.setVisible( false );
+               mtwEmbsen8.setVisible( true );
+            }
+            break;
          case "tlfOerzenIndex":
             if( map.get( "tlfOerzenIndex" ) == 0 ) {
                tlfOerzen.setVisible( true );
@@ -1704,8 +2015,8 @@ public class GuiS extends JFrame {
                tlfOerzen8.setVisible( true );
             }
             break;
-         case "tsfOerzenIndex":
-            if( map.get( "tsfOerzenIndex" ) == 0 ) {
+         case "mtwOerzenIndex":
+            if( map.get( "mtwOerzenIndex" ) == 0 ) {
                tsfOerzen.setVisible( true );
                tsfOerzen1.setVisible( false );
                tsfOerzen2.setVisible( false );
@@ -1715,7 +2026,7 @@ public class GuiS extends JFrame {
                tsfOerzen6.setVisible( false );
                tsfOerzen7.setVisible( false );
                tsfOerzen8.setVisible( false );
-            } else if( map.get( "tsfOerzenIndex" ) == 1 ) {
+            } else if( map.get( "mtwOerzenIndex" ) == 1 ) {
                tsfOerzen.setVisible( false );
                tsfOerzen1.setVisible( true );
                tsfOerzen2.setVisible( false );
@@ -1725,7 +2036,7 @@ public class GuiS extends JFrame {
                tsfOerzen6.setVisible( false );
                tsfOerzen7.setVisible( false );
                tsfOerzen8.setVisible( false );
-            } else if( map.get( "tsfOerzenIndex" ) == 2 ) {
+            } else if( map.get( "mtwOerzenIndex" ) == 2 ) {
                tsfOerzen.setVisible( false );
                tsfOerzen1.setVisible( false );
                tsfOerzen2.setVisible( true );
@@ -1735,7 +2046,7 @@ public class GuiS extends JFrame {
                tsfOerzen6.setVisible( false );
                tsfOerzen7.setVisible( false );
                tsfOerzen8.setVisible( false );
-            } else if( map.get( "tsfOerzenIndex" ) == 3 ) {
+            } else if( map.get( "mtwOerzenIndex" ) == 3 ) {
                tsfOerzen.setVisible( false );
                tsfOerzen1.setVisible( false );
                tsfOerzen2.setVisible( false );
@@ -1745,7 +2056,7 @@ public class GuiS extends JFrame {
                tsfOerzen6.setVisible( false );
                tsfOerzen7.setVisible( false );
                tsfOerzen8.setVisible( false );
-            } else if( map.get( "tsfOerzenIndex" ) == 4 ) {
+            } else if( map.get( "mtwOerzenIndex" ) == 4 ) {
                tsfOerzen.setVisible( false );
                tsfOerzen1.setVisible( false );
                tsfOerzen2.setVisible( false );
@@ -1755,7 +2066,7 @@ public class GuiS extends JFrame {
                tsfOerzen6.setVisible( false );
                tsfOerzen7.setVisible( false );
                tsfOerzen8.setVisible( false );
-            } else if( map.get( "tsfOerzenIndex" ) == 5 ) {
+            } else if( map.get( "mtwOerzenIndex" ) == 5 ) {
                tsfOerzen.setVisible( false );
                tsfOerzen1.setVisible( false );
                tsfOerzen2.setVisible( false );
@@ -1765,7 +2076,7 @@ public class GuiS extends JFrame {
                tsfOerzen6.setVisible( false );
                tsfOerzen7.setVisible( false );
                tsfOerzen8.setVisible( false );
-            } else if( map.get( "tsfOerzenIndex" ) == 6 ) {
+            } else if( map.get( "mtwOerzenIndex" ) == 6 ) {
                tsfOerzen.setVisible( false );
                tsfOerzen1.setVisible( false );
                tsfOerzen2.setVisible( false );
@@ -1775,7 +2086,7 @@ public class GuiS extends JFrame {
                tsfOerzen6.setVisible( true );
                tsfOerzen7.setVisible( false );
                tsfOerzen8.setVisible( false );
-            } else if( map.get( "tsfOerzenIndex" ) == 7 ) {
+            } else if( map.get( "mtwOerzenIndex" ) == 7 ) {
                tsfOerzen.setVisible( false );
                tsfOerzen1.setVisible( false );
                tsfOerzen2.setVisible( false );
@@ -1785,7 +2096,7 @@ public class GuiS extends JFrame {
                tsfOerzen6.setVisible( false );
                tsfOerzen7.setVisible( true );
                tsfOerzen8.setVisible( false );
-            } else if( map.get( "tsfOerzenIndex" ) == 8 ) {
+            } else if( map.get( "mtwOerzenIndex" ) == 8 ) {
                tsfOerzen.setVisible( false );
                tsfOerzen1.setVisible( false );
                tsfOerzen2.setVisible( false );
@@ -1890,8 +2201,8 @@ public class GuiS extends JFrame {
                tlfBarnstedt8.setVisible( true );
             }
             break;
-         case "tsfBarnstedtIndex":
-            if( map.get( "tsfBarnstedtIndex" ) == 0 ) {
+         case "mtwBarnstedtIndex":
+            if( map.get( "mtwBarnstedtIndex" ) == 0 ) {
                tsfBarnstedt.setVisible( true );
                tsfBarnstedt1.setVisible( false );
                tsfBarnstedt2.setVisible( false );
@@ -1901,7 +2212,7 @@ public class GuiS extends JFrame {
                tsfBarnstedt6.setVisible( false );
                tsfBarnstedt7.setVisible( false );
                tsfBarnstedt8.setVisible( false );
-            } else if( map.get( "tsfBarnstedtIndex" ) == 1 ) {
+            } else if( map.get( "mtwBarnstedtIndex" ) == 1 ) {
                tsfBarnstedt.setVisible( false );
                tsfBarnstedt1.setVisible( true );
                tsfBarnstedt2.setVisible( false );
@@ -1911,7 +2222,7 @@ public class GuiS extends JFrame {
                tsfBarnstedt6.setVisible( false );
                tsfBarnstedt7.setVisible( false );
                tsfBarnstedt8.setVisible( false );
-            } else if( map.get( "tsfBarnstedtIndex" ) == 2 ) {
+            } else if( map.get( "mtwBarnstedtIndex" ) == 2 ) {
                tsfBarnstedt.setVisible( false );
                tsfBarnstedt1.setVisible( false );
                tsfBarnstedt2.setVisible( true );
@@ -1921,7 +2232,7 @@ public class GuiS extends JFrame {
                tsfBarnstedt6.setVisible( false );
                tsfBarnstedt7.setVisible( false );
                tsfBarnstedt8.setVisible( false );
-            } else if( map.get( "tsfBarnstedtIndex" ) == 3 ) {
+            } else if( map.get( "mtwBarnstedtIndex" ) == 3 ) {
                tsfBarnstedt.setVisible( false );
                tsfBarnstedt1.setVisible( false );
                tsfBarnstedt2.setVisible( false );
@@ -1931,7 +2242,7 @@ public class GuiS extends JFrame {
                tsfBarnstedt6.setVisible( false );
                tsfBarnstedt7.setVisible( false );
                tsfBarnstedt8.setVisible( false );
-            } else if( map.get( "tsfBarnstedtIndex" ) == 4 ) {
+            } else if( map.get( "mtwBarnstedtIndex" ) == 4 ) {
                tsfBarnstedt.setVisible( false );
                tsfBarnstedt1.setVisible( false );
                tsfBarnstedt2.setVisible( false );
@@ -1941,7 +2252,7 @@ public class GuiS extends JFrame {
                tsfBarnstedt6.setVisible( false );
                tsfBarnstedt7.setVisible( false );
                tsfBarnstedt8.setVisible( false );
-            } else if( map.get( "tsfBarnstedtIndex" ) == 5 ) {
+            } else if( map.get( "mtwBarnstedtIndex" ) == 5 ) {
                tsfBarnstedt.setVisible( false );
                tsfBarnstedt1.setVisible( false );
                tsfBarnstedt2.setVisible( false );
@@ -1951,7 +2262,7 @@ public class GuiS extends JFrame {
                tsfBarnstedt6.setVisible( false );
                tsfBarnstedt7.setVisible( false );
                tsfBarnstedt8.setVisible( false );
-            } else if( map.get( "tsfBarnstedtIndex" ) == 6 ) {
+            } else if( map.get( "mtwBarnstedtIndex" ) == 6 ) {
                tsfBarnstedt.setVisible( false );
                tsfBarnstedt1.setVisible( false );
                tsfBarnstedt2.setVisible( false );
@@ -1961,7 +2272,7 @@ public class GuiS extends JFrame {
                tsfBarnstedt6.setVisible( true );
                tsfBarnstedt7.setVisible( false );
                tsfBarnstedt8.setVisible( false );
-            } else if( map.get( "tsfBarnstedtIndex" ) == 7 ) {
+            } else if( map.get( "mtwBarnstedtIndex" ) == 7 ) {
                tsfBarnstedt.setVisible( false );
                tsfBarnstedt1.setVisible( false );
                tsfBarnstedt2.setVisible( false );
@@ -1971,7 +2282,7 @@ public class GuiS extends JFrame {
                tsfBarnstedt6.setVisible( false );
                tsfBarnstedt7.setVisible( true );
                tsfBarnstedt8.setVisible( false );
-            } else if( map.get( "tsfBarnstedtIndex" ) == 8 ) {
+            } else if( map.get( "mtwBarnstedtIndex" ) == 8 ) {
                tsfBarnstedt.setVisible( false );
                tsfBarnstedt1.setVisible( false );
                tsfBarnstedt2.setVisible( false );
@@ -2262,6 +2573,282 @@ public class GuiS extends JFrame {
                gast26.setVisible( false );
                gast27.setVisible( false );
                gast28.setVisible( true );
+            }
+         case "gast3Index":
+            if( map.get( "gast3Index" ) == 0 ) {
+               gast3.setVisible( true );
+               gast31.setVisible( false );
+               gast32.setVisible( false );
+               gast33.setVisible( false );
+               gast34.setVisible( false );
+               gast35.setVisible( false );
+               gast36.setVisible( false );
+               gast37.setVisible( false );
+               gast38.setVisible( false );
+            } else if( map.get( "gast3Index" ) == 1 ) {
+               gast3.setVisible( false );
+               gast31.setVisible( true );
+               gast32.setVisible( false );
+               gast33.setVisible( false );
+               gast34.setVisible( false );
+               gast35.setVisible( false );
+               gast36.setVisible( false );
+               gast37.setVisible( false );
+               gast38.setVisible( false );
+            } else if( map.get( "gast3Index" ) == 2 ) {
+               gast3.setVisible( false );
+               gast31.setVisible( false );
+               gast32.setVisible( true );
+               gast33.setVisible( false );
+               gast34.setVisible( false );
+               gast35.setVisible( false );
+               gast36.setVisible( false );
+               gast37.setVisible( false );
+               gast38.setVisible( false );
+            } else if( map.get( "gast3Index" ) == 3 ) {
+               gast3.setVisible( false );
+               gast31.setVisible( false );
+               gast32.setVisible( false );
+               gast33.setVisible( true );
+               gast34.setVisible( false );
+               gast35.setVisible( false );
+               gast36.setVisible( false );
+               gast37.setVisible( false );
+               gast38.setVisible( false );
+            } else if( map.get( "gast3Index" ) == 4 ) {
+               gast3.setVisible( false );
+               gast31.setVisible( false );
+               gast32.setVisible( false );
+               gast33.setVisible( false );
+               gast34.setVisible( true );
+               gast35.setVisible( false );
+               gast36.setVisible( false );
+               gast37.setVisible( false );
+               gast38.setVisible( false );
+            } else if( map.get( "gast3Index" ) == 5 ) {
+               gast3.setVisible( false );
+               gast31.setVisible( false );
+               gast32.setVisible( false );
+               gast33.setVisible( false );
+               gast34.setVisible( false );
+               gast35.setVisible( true );
+               gast36.setVisible( false );
+               gast37.setVisible( false );
+               gast38.setVisible( false );
+            } else if( map.get( "gast3Index" ) == 6 ) {
+               gast3.setVisible( false );
+               gast31.setVisible( false );
+               gast32.setVisible( false );
+               gast33.setVisible( false );
+               gast34.setVisible( false );
+               gast35.setVisible( false );
+               gast36.setVisible( true );
+               gast37.setVisible( false );
+               gast38.setVisible( false );
+            } else if( map.get( "gast3Index" ) == 7 ) {
+               gast3.setVisible( false );
+               gast31.setVisible( false );
+               gast32.setVisible( false );
+               gast33.setVisible( false );
+               gast34.setVisible( false );
+               gast35.setVisible( false );
+               gast36.setVisible( false );
+               gast37.setVisible( true );
+               gast38.setVisible( false );
+            } else if( map.get( "gast3Index" ) == 8 ) {
+               gast3.setVisible( false );
+               gast31.setVisible( false );
+               gast32.setVisible( false );
+               gast33.setVisible( false );
+               gast34.setVisible( false );
+               gast35.setVisible( false );
+               gast36.setVisible( false );
+               gast37.setVisible( false );
+               gast38.setVisible( true );
+            }
+         case "gast4Index":
+            if( map.get( "gast4Index" ) == 0 ) {
+               gast4.setVisible( true );
+               gast41.setVisible( false );
+               gast42.setVisible( false );
+               gast43.setVisible( false );
+               gast44.setVisible( false );
+               gast45.setVisible( false );
+               gast46.setVisible( false );
+               gast47.setVisible( false );
+               gast48.setVisible( false );
+            } else if( map.get( "gast4Index" ) == 1 ) {
+               gast4.setVisible( false );
+               gast41.setVisible( true );
+               gast42.setVisible( false );
+               gast43.setVisible( false );
+               gast44.setVisible( false );
+               gast45.setVisible( false );
+               gast46.setVisible( false );
+               gast47.setVisible( false );
+               gast48.setVisible( false );
+            } else if( map.get( "gast4Index" ) == 2 ) {
+               gast4.setVisible( false );
+               gast41.setVisible( false );
+               gast42.setVisible( true );
+               gast43.setVisible( false );
+               gast44.setVisible( false );
+               gast45.setVisible( false );
+               gast46.setVisible( false );
+               gast47.setVisible( false );
+               gast48.setVisible( false );
+            } else if( map.get( "gast4Index" ) == 3 ) {
+               gast4.setVisible( false );
+               gast41.setVisible( false );
+               gast42.setVisible( false );
+               gast43.setVisible( true );
+               gast44.setVisible( false );
+               gast45.setVisible( false );
+               gast46.setVisible( false );
+               gast47.setVisible( false );
+               gast48.setVisible( false );
+            } else if( map.get( "gast4Index" ) == 4 ) {
+               gast4.setVisible( false );
+               gast41.setVisible( false );
+               gast42.setVisible( false );
+               gast43.setVisible( false );
+               gast44.setVisible( true );
+               gast45.setVisible( false );
+               gast46.setVisible( false );
+               gast47.setVisible( false );
+               gast48.setVisible( false );
+            } else if( map.get( "gast4Index" ) == 5 ) {
+               gast4.setVisible( false );
+               gast41.setVisible( false );
+               gast42.setVisible( false );
+               gast43.setVisible( false );
+               gast44.setVisible( false );
+               gast45.setVisible( true );
+               gast46.setVisible( false );
+               gast47.setVisible( false );
+               gast48.setVisible( false );
+            } else if( map.get( "gast4Index" ) == 6 ) {
+               gast4.setVisible( false );
+               gast41.setVisible( false );
+               gast42.setVisible( false );
+               gast43.setVisible( false );
+               gast44.setVisible( false );
+               gast45.setVisible( false );
+               gast46.setVisible( true );
+               gast47.setVisible( false );
+               gast48.setVisible( false );
+            } else if( map.get( "gast4Index" ) == 7 ) {
+               gast4.setVisible( false );
+               gast41.setVisible( false );
+               gast42.setVisible( false );
+               gast43.setVisible( false );
+               gast44.setVisible( false );
+               gast45.setVisible( false );
+               gast46.setVisible( false );
+               gast47.setVisible( true );
+               gast48.setVisible( false );
+            } else if( map.get( "gast4Index" ) == 8 ) {
+               gast4.setVisible( false );
+               gast41.setVisible( false );
+               gast42.setVisible( false );
+               gast43.setVisible( false );
+               gast44.setVisible( false );
+               gast45.setVisible( false );
+               gast46.setVisible( false );
+               gast47.setVisible( false );
+               gast48.setVisible( true );
+            }
+         case "gast5Index":
+            if( map.get( "gast5Index" ) == 0 ) {
+               gast5.setVisible( true );
+               gast51.setVisible( false );
+               gast52.setVisible( false );
+               gast53.setVisible( false );
+               gast54.setVisible( false );
+               gast55.setVisible( false );
+               gast56.setVisible( false );
+               gast57.setVisible( false );
+               gast58.setVisible( false );
+            } else if( map.get( "gast5Index" ) == 1 ) {
+               gast5.setVisible( false );
+               gast51.setVisible( true );
+               gast52.setVisible( false );
+               gast53.setVisible( false );
+               gast54.setVisible( false );
+               gast55.setVisible( false );
+               gast56.setVisible( false );
+               gast57.setVisible( false );
+               gast58.setVisible( false );
+            } else if( map.get( "gast5Index" ) == 2 ) {
+               gast5.setVisible( false );
+               gast51.setVisible( false );
+               gast52.setVisible( true );
+               gast53.setVisible( false );
+               gast54.setVisible( false );
+               gast55.setVisible( false );
+               gast56.setVisible( false );
+               gast57.setVisible( false );
+               gast58.setVisible( false );
+            } else if( map.get( "gast5Index" ) == 3 ) {
+               gast5.setVisible( false );
+               gast51.setVisible( false );
+               gast52.setVisible( false );
+               gast53.setVisible( true );
+               gast54.setVisible( false );
+               gast55.setVisible( false );
+               gast56.setVisible( false );
+               gast57.setVisible( false );
+               gast58.setVisible( false );
+            } else if( map.get( "gast5Index" ) == 4 ) {
+               gast5.setVisible( false );
+               gast51.setVisible( false );
+               gast52.setVisible( false );
+               gast53.setVisible( false );
+               gast54.setVisible( true );
+               gast55.setVisible( false );
+               gast56.setVisible( false );
+               gast57.setVisible( false );
+               gast58.setVisible( false );
+            } else if( map.get( "gast5Index" ) == 5 ) {
+               gast5.setVisible( false );
+               gast51.setVisible( false );
+               gast52.setVisible( false );
+               gast53.setVisible( false );
+               gast54.setVisible( false );
+               gast55.setVisible( true );
+               gast56.setVisible( false );
+               gast57.setVisible( false );
+               gast58.setVisible( false );
+            } else if( map.get( "gast5Index" ) == 6 ) {
+               gast5.setVisible( false );
+               gast51.setVisible( false );
+               gast52.setVisible( false );
+               gast53.setVisible( false );
+               gast54.setVisible( false );
+               gast55.setVisible( false );
+               gast56.setVisible( true );
+               gast57.setVisible( false );
+               gast58.setVisible( false );
+            } else if( map.get( "gast5Index" ) == 7 ) {
+               gast5.setVisible( false );
+               gast51.setVisible( false );
+               gast52.setVisible( false );
+               gast53.setVisible( false );
+               gast54.setVisible( false );
+               gast55.setVisible( false );
+               gast56.setVisible( false );
+               gast57.setVisible( true );
+               gast58.setVisible( false );
+            } else if( map.get( "gast5Index" ) == 8 ) {
+               gast5.setVisible( false );
+               gast51.setVisible( false );
+               gast52.setVisible( false );
+               gast53.setVisible( false );
+               gast54.setVisible( false );
+               gast55.setVisible( false );
+               gast56.setVisible( false );
+               gast57.setVisible( false );
+               gast58.setVisible( true );
             }
             // ######################################################################
          default:
